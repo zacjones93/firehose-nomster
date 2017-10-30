@@ -49,3 +49,19 @@
     font-size: 26px;
     letter-spacing: -0.3px;
  }
+
+ .center {
+  width: 275px;
+  margin: 0 auto;
+}
+
+.page-link {
+  background: #111111;
+  color: #C7E9CC;
+}
+
+li.page-item.active a.page-link{
+  background: #C7E9CC;
+  color: #111111;
+  border-color: #111111;
+}
