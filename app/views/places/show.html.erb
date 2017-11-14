@@ -46,3 +46,13 @@
   <% end %>
 
 </div>
+
+<h1>Comments</h1>
+
+<% @place.comments.each do |comment| %>
+  <div>
+    <b><%= comment.rating %></b> - 
+    <%= comment.message %>
+    <small><%= comment.user.email %><small>
+  </div>
+<% end %>
