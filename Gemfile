@@ -64,6 +64,9 @@ gem 'devise'
 gem "geocoder"
 gem "figaro"
 
+# photo upload
+gem 'carrierwave', '~> 1.0'
+
 # pagination
 gem 'kaminari'
 
