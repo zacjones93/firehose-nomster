@@ -55,7 +55,6 @@
 
 
 
-
 </div>
 <div class="clear"></div>
 
@@ -128,9 +127,11 @@
   <% @place.comments.each do |comment| %>
     <div class="col-12 col-sm-6">
       <blockquote>
-        <b><%= comment.humanized_rating %></b> - 
+        <% if comment.humanized_rating.present? %>
+          <b><%= comment.humanized_rating %></b> -
+        <% end %>
         <%= comment.message %>
-        <small><%= comment.user.email %><small>
+        <small><%= comment.user.email %></small>
       </blockquote>
     </div>
   <% end %>
